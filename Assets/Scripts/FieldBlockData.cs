@@ -5,6 +5,7 @@ public class FieldBlockData : MonoBehaviour{
     //world position
     private int _x;
     private int _y;
+    private bool _occupied;
     private List<FieldBlockData> neighbours;
     private float _illuminance;
 
@@ -19,6 +20,10 @@ public class FieldBlockData : MonoBehaviour{
     public float Illuminance {
         get { return _illuminance; }
         private set { _illuminance = value; }
+    }
+    public bool IsOccupied {
+        get { return _occupied; }
+        private set { _occupied = value;}
     }
 
     FieldBlockData(int positionX, int postitionY) {
@@ -35,4 +40,6 @@ public class FieldBlockData : MonoBehaviour{
     public void AddNeighbour(FieldBlockData neighbour) { if(!neighbours.Contains(neighbour)) neighbours.Add(neighbour); }
     public List<FieldBlockData> GetNeighbours() { return neighbours; }
     public void SetIlluminance(float luxValue) { Illuminance = luxValue; }
+    public void Occupy() { IsOccupied = true; }
+    public void Free() { IsOccupied = false; }
 }
