@@ -45,9 +45,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Controllers\BlockDataTransferController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\FieldBlockData.cs" />
-     <Compile Include="Assets\Scripts\Datums\DataPacks.cs" />
+     <Compile Include="Assets\Scripts\Controllers\DisplayBlockInfo.cs" />
+     <Compile Include="Assets\Scripts\Datums\DataStructs.cs" />
      <Compile Include="Assets\Scripts\Datums\FieldData.cs" />
      <Compile Include="Assets\Scripts\EnlightmentGrid.cs" />
      <Compile Include="Assets\Scripts\NeighboursList.cs" />
