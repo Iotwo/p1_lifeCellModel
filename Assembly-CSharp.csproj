@@ -45,12 +45,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Controllers\DisplayBlockInfo.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BlockInfoDisplayer.cs" />
      <Compile Include="Assets\Scripts\Datums\DataStructs.cs" />
      <Compile Include="Assets\Scripts\Datums\FieldData.cs" />
-     <Compile Include="Assets\Scripts\EnlightmentGrid.cs" />
-     <Compile Include="Assets\Scripts\NeighboursList.cs" />
-     <Compile Include="Assets\Scripts\OccupationGrid.cs" />
+     <Compile Include="Assets\Scripts\Entities\EnlightmentGrid.cs" />
+     <Compile Include="Assets\Scripts\Entities\FieldInitializer.cs" />
+     <Compile Include="Assets\Scripts\Entities\NeighboursList.cs" />
+     <Compile Include="Assets\Scripts\Entities\OccupationGrid.cs" />
      <None Include="Assets\csc.rsp" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>F:/Unitys/p1_lifeCellModel/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -22,8 +22,8 @@ public class FieldBlockData {
 
     public int X {
         get { return _x; }
-        set { _x = value; }
-        }
+        private set { _x = value; }
+    }
     public int Y {
         get { return _y; }
         private set { _y = value; }

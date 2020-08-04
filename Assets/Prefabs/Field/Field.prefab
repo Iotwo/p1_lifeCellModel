@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1859565178473720803}
-  - component: {fileID: -5101423270042721546}
+  - component: {fileID: -7119237404062509114}
+  - component: {fileID: -898634005677091634}
   m_Layer: 0
   m_Name: Field
   m_TagString: GroundLevel
@@ -31,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5101423270042721546
+--- !u!114 &-7119237404062509114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,3 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a1235d0b2781e44bff199ad364cbd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _width: 0
+  _heigth: 0
+--- !u!114 &-898634005677091634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8333330700359092566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187c90ada57b14e46b43e530d6c320b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fieldBlockPrefab: {fileID: 0}
