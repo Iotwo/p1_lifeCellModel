@@ -45,11 +45,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Prefabs\Mechanisms\FieldInitialiser.cs" />
      <Compile Include="Assets\Scripts\Controllers\BlockInfoDisplayer.cs" />
-     <Compile Include="Assets\Scripts\Datums\DataStructs.cs" />
-     <Compile Include="Assets\Scripts\Datums\FieldData.cs" />
+     <Compile Include="Assets\Scripts\Data\DataStructs.cs" />
+     <Compile Include="Assets\Scripts\Data\FieldData.cs" />
      <Compile Include="Assets\Scripts\Entities\EnlightmentGrid.cs" />
-     <Compile Include="Assets\Scripts\Entities\FieldInitializer.cs" />
      <Compile Include="Assets\Scripts\Entities\NeighboursList.cs" />
      <Compile Include="Assets\Scripts\Entities\OccupationGrid.cs" />
      <None Include="Assets\csc.rsp" />
