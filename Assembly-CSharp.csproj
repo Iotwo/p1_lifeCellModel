@@ -45,8 +45,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Prefabs\Mechanisms\FieldInitialiser.cs" />
      <Compile Include="Assets\Scripts\Controllers\BlockInfoDisplayer.cs" />
+     <Compile Include="Assets\Scripts\Controllers\FieldController.cs" />
      <Compile Include="Assets\Scripts\Data\DataStructs.cs" />
      <Compile Include="Assets\Scripts\Data\FieldData.cs" />
      <Compile Include="Assets\Scripts\Entities\EnlightmentGrid.cs" />

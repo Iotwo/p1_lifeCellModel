@@ -9,6 +9,8 @@ public class OccupationGrid : MonoBehaviour {
     }
 
 
+    public void Awake() {}
+
     public void SetOccupation(int xCoord, int yCoord, bool isOccupied) { Occupation[xCoord, yCoord] = isOccupied; }
 
     public void Activate(int occupationGridSizeX, int occupationGridSizeY) {

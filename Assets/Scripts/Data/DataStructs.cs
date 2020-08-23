@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public struct Coordinates {
     public int X { get; }
@@ -10,6 +12,8 @@ public struct Coordinates {
         X = xCoord;
         Y = yCoord;
     }
+
+    public string Print() { return (String.Format("{0};{1}",X, Y)); }
 }
 
 
@@ -48,5 +52,15 @@ public class FieldBlockData {
         Illuminance = illuminance;
         IsOccupied = occupation;
         Neighbours = neighbours;
+    }
+
+    public void PrintBlockData() {
+        string neighbours = String.Empty;
+        
+        for (int i = 0; i<Neighbours.Count; i++)
+            neighbours+="{" + Neighbours[i].Print() + "}";
+
+        Debug.Log(String.Format("Coordinates:[{0},{1}]; Illuminance: {2}; Occupation: {3}; Neighbours: [{4}];",
+                                X, Y, Illuminance, IsOccupied, neighbours));
     }
 }

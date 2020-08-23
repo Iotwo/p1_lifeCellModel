@@ -6,14 +6,20 @@ using UnityEngine;
 
 public class BlockInfoDisplayer : MonoBehaviour
 { 
+    private FieldController _fieldController; // do I really need this?
+
+    void Start() {
+        _fieldController = GetComponent<FieldController>();
+    }
+
     private bool GetOccupationData(int xPosition, int yPosition){
-        return GetComponent<OccupationGrid>().Occupation[xPosition,yPosition];
+        return _fieldController.OccupationGrid.Occupation[xPosition,yPosition];
     }
     private float GetEnlightmentData(int xPosition, int yPosition){
-        return GetComponent<EnlightmentGrid>().Enlightment[xPosition,yPosition];
+        return _fieldController.EnlightmentGrid.Enlightment[xPosition,yPosition];
     }
     private List<Coordinates> GetNeighboursData(int xPosition, int yPosition){
-        return (List<Coordinates>)GetComponent<NeighboursList>().Neighbours[xPosition, yPosition];
+        return (List<Coordinates>)_fieldController.NeighboursList.Neighbours[xPosition, yPosition];
     }
     public FieldBlockData DisplayBlockInfo(int blockPositionX, int blockPositionY){
         return new FieldBlockData(blockPositionX, blockPositionY,

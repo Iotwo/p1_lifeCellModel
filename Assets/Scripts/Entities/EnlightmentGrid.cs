@@ -8,6 +8,7 @@ public class EnlightmentGrid : MonoBehaviour {
         private set { _enlightment = value; }
     }
 
+    public void Awake() {}
 
     public void SetEnlightment(int xCoord, int yCoord, float enlightVal) { Enlightment[xCoord, yCoord] = enlightVal; }
 
