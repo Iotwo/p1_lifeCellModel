@@ -55,7 +55,7 @@ public class FieldController : MonoBehaviour
     }
 
     private void InitializeField(int height, int width) {
-        int i=0, j=0, x=0, y=0;
+        int i=0, j=0;
         
         _enlightmentGrid.Activate(height, width);
         _neighboursList.Activate(height, width);
@@ -64,11 +64,6 @@ public class FieldController : MonoBehaviour
         for(i = 0; i < height; i++)
             for(j = 0; j < width; j++) {
                 Instantiate(_fieldBlockPrefab, new Vector3(i,j,0), Quaternion.identity, this.gameObject.transform).name=String.Format("Block_{0}-{1}",i,j);
-                for(x=i-1; x<=i+1;x++)
-                    for(y=j-1;y<=j+1;y++)
-                        if(x>-1 && x<height && y>-1 && y<width)
-                            if (x!=i || y!=j)
-                                _neighboursList.AddNeighbour(i,j,new Coordinates(x,y));
             }
     }  
 }
